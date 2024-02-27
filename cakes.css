@@ -1,0 +1,62 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    margin-top: 150px;
+  }
+  
+.clm {
+    flex-basis: calc(25% - 5px); /* Adjust based on your preference */
+    margin-bottom: 20px;
+    
+    
+    
+  }
+  
+.clm img {
+    width: 75%;
+    height: auto;
+    padding: 10px;
+    border:  5px solid rgb(160, 157, 157);
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    
+    
+  }
+
+  .clm img:hover {
+    transform: scale(1.1);
+  }
+
+  @keyframes zoom-out {
+    100% {
+      transform: scale(1.1); /* Zoom out to 115% on hover */
+    }
+  }
+  
+.clm h3 {
+    margin-top: 10px;
+    font-size: 15px;
+    
+    
+  }
+
+ 
+  @media only screen and (max-width:400px){
+    .clm{
+        display: block ;
+        flex-basis: calc(25% - 10px);
+
+    }
+    .clm h3 {
+        margin-top: 10px;
+        font-size: 10px;
+
+  }
+  }
